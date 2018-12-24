@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scene3</title>
+	<style>
+	body{
+	background:#000; height: 16000px;}
+
+	/*만화컷*/
+
+	#cut1{position: absolute; width: 960px; height: 1030px; top: 1500px; transform:all 1s; left: 550px;}
+
+	#cut2{position: absolute; width: 503px; height: 480px; top: 2450px; left: 900px;}
+
+	#cut3{position: absolute; width:960px; height:723px; top: 2900px;
+		left: 550px; z-index: -1}
+
+	#cut4{position: absolute; width:960px; height:426px; top: 3700px;
+		left: 550px; z-index: -1}
+
+	#cut5{position: absolute; width:644px; height:324px; top: 4200px;
+		left: 850px; z-index: -1}
+
+	#cut6{position: absolute; width:960px; height:1067px; top: 4500px;
+		left: 550px; z-index: -1}
+
+	#cut7{position: absolute; width:960px; height:2587px; top: 5500px;
+		left: 550px; z-index: -1}
+
+	#cut8{position: absolute; width:960px; height:654px; top: 8200px;
+		left: 550px; z-index: -1}
+
+	#cut9{position: absolute; width:960px; height:529px; top: 9000px;
+		left: 550px; z-index: -1}
+
+	#cut10{position: absolute; width:960px; height:1030px; top: 12000px;
+		left: 550px; z-index: -1}
+
+	#cut11{position: absolute; width:880px; height:462px; top: 13300px;
+		left: 630px; z-index: -1}
+
+	#cut12{position: absolute; width:880px; height:554px; top: 13900px;
+		left: 550px; z-index: -1}
+
+    #blackbox{position: absolute; width:960px; height:500px; top: 13500px;
+		left: 550px; z-index: -2}
+
+
+	/*말풍선*/
+
+
+	#malmal1{position: absolute; width:600px; height:360px; top: 1500px;
+		left: 750px; z-index: 1}
+
+	#malmal2{position: absolute; width:600px; height:360px; top: 4100px;
+		left: 750px; z-index: 1}
+
+	#malmal3{position: absolute; width:750px; height:450px; top: 5700px;
+		left: 650px; z-index: 1}
+
+	#malmal5{position: absolute; width:850px; height:510px; top: 7300px;
+		left: 600px; z-index: 1}
+
+	#malmal6{position: absolute; width:750px; height:450px; top: 8000px;
+		left: 800px; z-index: 1}
+
+	#malmal7{position: absolute; width:750px; height:450px; top: 9300px;
+		left: 950px; z-index: 1}
+
+	#malmal8{position: absolute; width:750px; height:450px; top:8700px;
+		left: 350px; z-index: 1}
+
+	#malmal9{position: absolute; width:750px; height:450px; top:10000px;
+		left: 650px; z-index: 1}
+
+	#malmal10{position: absolute; width:750px; height:450px; top:11000px;
+		left: 650px; z-index: 1}
+
+	#malmal11{position: absolute; width:750px; height:450px; top:12500px;
+		left: 650px; z-index: 1}
+
+	#malmal12{position: absolute; width:750px; height:450px; top:13500px;
+		left: 350px; z-index: 1}
+
+	#malmal13{position: absolute; width:750px; height:450px; top:14000px;
+		left: 1000px; z-index: 1}
+
+	#malmal14{position: absolute; width:750px; height:450px; top:14800px;
+		left: 650px; z-index: 1; cursor: pointer;}
+
+
+
+
+
+
+	/*효과음*/
+
+	#gyrhkdma{position: absolute; width:295px; height:331px; top: 2500px;
+		left: 950px; z-index: 1}
+
+	#gyrhkdma2{position: absolute; width:295px; height:331px; top: 5800px;
+		left: 1000px; z-index: 2}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<img id = "cut1" src="./image/카툰1-1.png">
+<img id = "cut2" src="./image/카툰1-2.png">
+<img id = "cut3" src="./image/카툰1-3.png">
+<img id = "cut4" src="./image/카툰1-4.png">
+<img id = "cut5" src="./image/카툰1-5.png">
+<img id = "cut6" src="./image/카툰1-6.png">
+<img id = "cut7" src="./image/카툰1-7.png">
+<img id = "cut8" src="./image/카툰1-8.png">
+<img id = "cut9" src="./image/카툰1-9.png">
+<img id = "cut10" src="./image/카툰2-1.png">
+<img id = "cut11" src="./image/카툰2-2.png">
+<img id = "cut12" src="./image/카툰2-3.png">
+
+<div id="blackbox"></div>
+
+<img id = "gyrhkdma" src="./image/효과음3.png">
+<img id = "gyrhkdma2" src="./image/효과음4.png">
+
+<img id = "malmal1" src="./image/2대사1-1.png">
+<img id = "malmal2" src="./image/2대사1-2.png">
+<img id = "malmal3" src="./image/2대사1-3.png">
+<img id = "malmal5" src="./image/2대사1-5.png">
+<img id = "malmal6" src="./image/2대사1-7.png">
+<img id = "malmal7" src="./image/2대사1-8.png">
+<img id = "malmal8" src="./image/2대사1-9.png">
+<img id = "malmal9" src="./image/2대사2-1.png">
+<img id = "malmal10" src="./image/2대사2-2.png">
+<img id = "malmal11" src="./image/2대사2-3.png">
+<img id = "malmal12" src="./image/2대사2-4.png">
+<img id = "malmal13" src="./image/2대사2-6.png">
+<a href="index4.html"><img id = "malmal14" src="./image/2대사2-7.png"></a></div>
+
+<script type="text/javascript">
+
+	window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+
+	if(t < 100){
+
+		cut1.style.opacity = "0";
+		cut2.style.opacity = "0";
+		cut3.style.opacity = "0";
+		cut4.style.opacity = "0";
+		cut5.style.opacity = "0";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "0";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "0";
+		malmal2.style.opacity = "0";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 500){
+		cut1.style.opacity = "0";
+		cut2.style.opacity = "0";
+		cut3.style.opacity = "0";
+		cut4.style.opacity = "0";
+		cut5.style.opacity = "0";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "0";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "0";
+		malmal2.style.opacity = "0";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 1000){
+		cut1.style.opacity = "0";
+		cut2.style.opacity = "0";
+		cut3.style.opacity = "0";
+		cut4.style.opacity = "0";
+		cut5.style.opacity = "0";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "0";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "0";
+		malmal2.style.opacity = "0";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 1500){
+		cut1.style.opacity = "0";
+		cut2.style.opacity = "0";
+		cut3.style.opacity = "0";
+		cut4.style.opacity = "0";
+		cut5.style.opacity = "0";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "0";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "0";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 2300){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "0";
+		cut3.style.opacity = "0";
+		cut4.style.opacity = "0";
+		cut5.style.opacity = "0";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "0";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "0";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 2350){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "0";
+		cut4.style.opacity = "0";
+		cut5.style.opacity = "0";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "0.5";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "0";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+
+    }else if(t < 2400){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "0";
+		cut4.style.opacity = "0";
+		cut5.style.opacity = "0";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "0";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 2550){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "0";
+		cut5.style.opacity = "0";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "0";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 2800){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "0";
+		cut5.style.opacity = "0";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "0";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 3000){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "0";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "0";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 3400){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "0";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "0";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 3800){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "0";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 4500){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "0";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 5500){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "0";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "0";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 6000){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 7000){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "0";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 7500){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "0";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "0";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 7700){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 7800){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "0";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 8000){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 8500){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "0";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 9000){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "1";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "0";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 9500){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "1";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "1";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "0";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 10500){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "1";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "1";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "1";
+		malmal10.style.opacity = "0";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 11500){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "1";
+		cut10.style.opacity = "0";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "1";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "1";
+		malmal10.style.opacity = "1";
+		malmal11.style.opacity = "0";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 12500){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "1";
+		cut10.style.opacity = "1";
+		cut11.style.opacity = "0";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "1";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "1";
+		malmal10.style.opacity = "1";
+		malmal11.style.opacity = "1";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	
+	}else if(t < 13000){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "1";
+		cut10.style.opacity = "1";
+		cut11.style.opacity = "1";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "1";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "1";
+		malmal10.style.opacity = "1";
+		malmal11.style.opacity = "1";
+		malmal12.style.opacity = "0";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+
+	}else if(t < 13500){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "1";
+		cut10.style.opacity = "1";
+		cut11.style.opacity = "1";
+		cut12.style.opacity = "0";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "1";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "1";
+		malmal10.style.opacity = "1";
+		malmal11.style.opacity = "1";
+		malmal12.style.opacity = "1";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 14000){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "1";
+		cut10.style.opacity = "1";
+		cut11.style.opacity = "1";
+		cut12.style.opacity = "1";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "1";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "1";
+		malmal10.style.opacity = "1";
+		malmal11.style.opacity = "1";
+		malmal12.style.opacity = "1";
+		malmal13.style.opacity = "0";
+		malmal14.style.opacity = "0";
+	}else if(t < 14500){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "1";
+		cut10.style.opacity = "1";
+		cut11.style.opacity = "1";
+		cut12.style.opacity = "1";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "1";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "1";
+		malmal10.style.opacity = "1";
+		malmal11.style.opacity = "1";
+		malmal12.style.opacity = "1";
+		malmal13.style.opacity = "1";
+		malmal14.style.opacity = "0";
+
+	}else if(t < 14600){
+		cut1.style.opacity = "1";
+		cut2.style.opacity = "1";
+		cut3.style.opacity = "1";
+		cut4.style.opacity = "1";
+		cut5.style.opacity = "1";
+		cut6.style.opacity = "1";
+		cut7.style.opacity = "1";
+		cut8.style.opacity = "1";
+		cut9.style.opacity = "1";
+		cut10.style.opacity = "1";
+		cut11.style.opacity = "1";
+		cut12.style.opacity = "1";
+
+		gyrhkdma.style.opacity = "1";
+		gyrhkdma2.style.opacity = "1";
+
+		malmal1.style.opacity = "1";
+		malmal2.style.opacity = "1";
+		malmal3.style.opacity = "1";
+		malmal5.style.opacity = "1";
+		malmal6.style.opacity = "1";
+	    malmal7.style.opacity = "1";
+		malmal8.style.opacity = "1";
+		malmal9.style.opacity = "1";
+		malmal10.style.opacity = "1";
+		malmal11.style.opacity = "1";
+		malmal12.style.opacity = "1";
+		malmal13.style.opacity = "1";
+		malmal14.style.opacity = "1";
+
+
+
+	
+
+	
+
+
+}
+
+}
+
+	
+
+
+
+</script>
+
+
+
+</body>
+</html>
